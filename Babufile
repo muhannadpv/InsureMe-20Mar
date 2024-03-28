@@ -24,7 +24,7 @@ pipeline {
             }
     stage('Create a Docker image from the Package Insure-Me.jar file') {
       steps {
-        sh 'docker build -t muhannadpv/insure-me-app:4.0 .'
+        sh 'docker build -t muhannadpv/bankprojectrepostartagile:1.0 .'
                     }
             }
     stage('Login to Dockerhub') {
@@ -36,7 +36,7 @@ pipeline {
             }
     stage('Push the Docker image') {
       steps {
-        sh 'docker push muhannadpv/insure-me-app:4.0'
+        sh 'docker push muhannadpv/bankprojectrepostartagile:1.0'
                                 }
             }
     stage('Ansbile config and Deployment') {
